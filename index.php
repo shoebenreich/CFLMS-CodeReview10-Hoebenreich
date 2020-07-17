@@ -75,8 +75,9 @@ error_reporting(E_ALL ^  E_NOTICE);
                        <td>" .$row['description']."</td>
                        <td>".$row['status']."</td>
                        <td>
-                           <a href='update.php?id=" .$row['id']."'><button type='button' class='btn btn-primary'>Edit</button></a>
-                           <a href='delete.php?id=" .$row['id']."'><button type='button' class='btn btn-danger'>Delete</button></a>
+                            <a href='details.php?id=" .$row['id']."'><button type='button' class='btn btn-success'>Show More</button></a>
+                            <a href='update.php?id=" .$row['id']."'><button type='button' class='btn btn-primary'>Edit</button></a>
+                            <a href='delete.php?id=" .$row['id']."'><button type='button' class='btn btn-danger'>Delete</button></a>
                        </td>
                    </tr>" ;
                }
