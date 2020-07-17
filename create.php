@@ -62,11 +62,11 @@
            </tr>
            <tr>
                <th>Publish Date</th>
-               <td><input type="text" name="publish_date" placeholder ="Publish Date"></td>
+               <td><input type="date" name="publish_date" placeholder ="Publish Date"></td>
            </tr>
            <tr>
                <th>ISBN</th>
-               <td><input type="number"  name="ISBN" placeholder ="ISBN Number"></td>
+               <td><input type="text"  name="ISBN" placeholder ="ISBN Number"></td>
            </tr>
            <tr>
                <th>Description</th>
