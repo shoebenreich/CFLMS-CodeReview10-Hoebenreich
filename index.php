@@ -58,7 +58,7 @@ error_reporting(E_ALL ^  E_NOTICE);
 
         <?php
         
-           $sql = "SELECT * FROM media INNER JOIN publishers ON media.publisher_id = publishers.publisher_id";
+           $sql = "SELECT * FROM media INNER JOIN publishers ON media.publisher_id = publishers.publisher_id INNER JOIN authors ON media.author_id = authors.author_id";
            $result = $connect->query($sql);
         
             if($result->num_rows > 0) {
@@ -68,7 +68,7 @@ error_reporting(E_ALL ^  E_NOTICE);
                        <td>" .$row['mediatype']."</td>
                        <td>" .$row['title']."</td>
                        <td><img src= ' " .$row['image']." ' width='150px'></td>
-                       <td>" .$row['author_id']."</td>
+                       <td>" .$row['first_name']." " .$row['last_name']."</td>
                        <td><a href='publisher.php?id=" .$row['publisher_id']."'>" .$row['name']."</a></td>
                        <td>" .$row['date']."</td>
                        <td>" .$row['ISBN']."</td>
